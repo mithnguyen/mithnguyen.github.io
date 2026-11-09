@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mith Tools</title>
+<meta name="description" content="Mith Tools - private automation tools for website backup and maintenance.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<nav><a href="/">Mith Tools</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></nav>
+<h1>Mith Tools</h1>
+<p class="sub">Private automation tools for website backup and maintenance.</p>
+<p>Mith Tools is a small set of command-line tools run by its owner on servers the owner manages. It is not a public service: there is no sign-up, and only the owner's own Google account is connected.</p>
+<h2>What it does</h2>
+<ul>
+<li><strong>Website backup.</strong> Every night the backup tool packs a website's database, code and media files and uploads them to a folder in the owner's own Google Drive. It keeps 30 daily and 12 monthly copies, deletes older copies it created itself, and can restore a website from those copies.</li>
+<li><strong>Source code backup.</strong> It copies the owner's git repositories to the same Google Drive folder, so code survives an outage or an accidental deletion on the git host.</li>
+</ul>
+<h2>Google account access</h2>
+<p>The tools ask Google for the narrowest Drive permission, <code>drive.file</code>: they can see and change only the files and folders they created themselves. They cannot read any other file in the Drive.</p>
+<p>Details: <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a>.</p>
+<footer>Mith Tools · contact: <a href="https://github.com/mithnguyen">github.com/mithnguyen</a></footer>
+</main>
+</body>
+</html>
